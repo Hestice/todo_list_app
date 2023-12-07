@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/common/button_common.dart';
 import '../common/text_field_common.dart';
 import '../common/item_common.dart';
+import '../services/todo_service.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -42,12 +43,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: EdgeInsets.only(left: 5.0,),
                       child: ButtonCommon(
                         onPressFunctionName: () {
-                          String newItemText = textController.text;// get the text from your text field here
-                          if (newItemText.isNotEmpty) {
+                           String newItemText = textController.text;
+                            TodoService.addItem(todoItems, newItemText);
                             setState(() {
-                              todoItems.add(ToDoItem(text: newItemText, isChecked: false));
+                              textController.clear(); 
                             });
-                          }
+                            print('Item Should be added');
                         },
                         buttonText: 'Add',
                         backgroundColor: Colors.blue,

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438944248095",
+    "project_id": "activity-2-cse",
+    "storage_bucket": "activity-2-cse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438944248095:android:bf4e710fb3ce1a8c74402a",
+        "android_client_info": {
+          "package_name": "com.cse2.todo_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNVLGVieHbLUbzJUB3XMg2_NRDIQk1Xys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
